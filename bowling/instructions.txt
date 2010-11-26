@@ -1,0 +1,32 @@
+1-4| 4--5 | 6 -4 | 5-5 | 0-1 | 7-3  | 6-4 | x     | 2-8-6
+ 5  |  14   |  29  |  49  | 61  | 77   |  97  | 117 |  133
+
+The game consists of 10 frames as shown above.  In each frame the player has
+two opportunities to knock down 10 pins.  The score for the frame is the total
+number of pins knocked down, plus bonuses for strikes and spares.
+
+A spare is when the player knocks down all 10 pins in two tries.  The bonus for
+that frame is the number of pins knocked down by the next roll.  So in frame 3
+above, the score is 10 (the total number knocked down) plus a bonus of 5 (the
+number of pins knocked down on the next roll.)
+
+A strike is when the player knocks down all 10 pins on his first try.  The bonus
+for that frame is the value of the next two balls rolled.
+
+In the tenth frame a player who rolls a spare or strike is allowed to roll the extra
+balls to complete the frame.  However no more than three balls can be rolled in
+tenth frame.
+
+
+The kata is to build up a model for scoring games, and consume that model
+within a series of unit tests. The tests in english are as follows.
+The test and code should be evaluated often so that the simplest definition of 
+each test is done and the code is modified to make that pass and then refactored.
+
+
+
+First Test: Gutterball game.
+Second Test: All 1 pins.
+Third Test: 1 spare.
+Fourth Test: 1 strike.
+Fifth Test: Perfect Game.
